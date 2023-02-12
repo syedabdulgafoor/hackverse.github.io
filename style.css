@@ -57,22 +57,32 @@ button {
 button:focus {
   outline: none;
 }
+
+#hero svg {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+}
+
+#home-section {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  z-index: 2;
+  width: 100%;
+}
+
 .home {
   min-height: 100vh;
-  background-color: #021f3b;
   color: #d1e5dc;
   font-family: Poppins;
-  background-image: url("./img/bg.webp");
-  background-image: url("./img/hero-bg.png");
-  /* background-image: url("./img/hero-bg-2.png"); */
-  /* background-image: url("./img/hero-bg-3.png"); */
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center 50%;
 }
 
 .main {
   height: 80%;
+  z-index: 1;
 }
 
 .snowflake {
@@ -356,7 +366,8 @@ a {
   backdrop-filter: blur(23px);
 }
 
-.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link {
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .show > .nav-link {
   color: #042c44 !important;
 }
 
@@ -368,15 +379,15 @@ a {
   color: rgba(255, 255, 255, 0.55);
 }
 
-.container{
+.container {
   justify-content: center;
 }
 
-.container .main-page{
+.container .main-page {
   justify-content: flex-end;
 }
 
-.container .main-page .heading-main{
+.container .main-page .heading-main {
   color: white;
   padding: 20px;
   border-radius: 6px;
@@ -387,11 +398,11 @@ a {
   min-height: initial;
   backdrop-filter: blur(23px);
   background: rgba(33, 37, 41, 0.2);
-  
+
   align-items: center;
 }
 
-.container .main-page .home-page-logo{
+.container .main-page .home-page-logo {
   padding: 10rem;
 }
 /* relative position for scrollspy to work */
