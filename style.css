@@ -134,7 +134,8 @@ button:focus {
 }
 
 .about {
-  background-color: #d1e5dc;
+  /* background-color: #d1e5dc; */
+  background-color: #1d1d3a;
   min-height: 100vh;
   font-family: Poppins;
 }
@@ -361,9 +362,37 @@ a {
   padding-bottom: 0px;
   /* background-image: linear-gradient(to right, #042c44, #041c3c); */
   background: rgba(33, 37, 41, 0.2);
+  background: rgba(33, 37, 41, 0);
   box-shadow: 10px 10px 76px 0px rgb(0 0 0 / 5%);
-  color: #042c44;
-  backdrop-filter: blur(23px);
+  /* color: #042c44; */
+  backdrop-filter: blur(10px);
+  mask: linear-gradient(transparent, black 60%);
+}
+
+.icy-navbar {
+  margin:20px;
+  /* outline: 100px white; */
+  /* border-top:2px solid white;
+  border-left:2px solid white;
+  border-right:2px solid white; */
+  border:2px solid white;
+  border-top-right-radius: 10%;
+  border-top-left-radius: 10%;
+  width: 100%;
+  height: 100%;
+}
+
+.icy-navbar-2 {
+  margin:20px;
+  /* outline: 100px white; */
+  /* border-top:2px solid white;
+  border-left:2px solid white;
+  border-right:2px solid white; */
+  /* border:2px solid white; */
+  border-top-right-radius: 10%;
+  border-top-left-radius: 10%;
+  width: 100%;
+  height: 100%;
 }
 
 .navbar-dark .navbar-nav .nav-link.active,
@@ -413,6 +442,7 @@ section {
 
 .navbar-logo-custom {
   margin-right: 50px;
+  float: left;
 }
 
 .home-top-space-custom {
