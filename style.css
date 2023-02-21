@@ -262,7 +262,7 @@ button:focus {
   background-color: #021f3b;
   color: #d1e5dc;
   padding-top: 8%;
-  background: url("img/footer2.webp") bottom no-repeat,
+  background: url("img/trees-snow.png") bottom no-repeat,
     url("./img/bg_stars.webp") top no-repeat;
   background-size: 100%, cover;
 }
