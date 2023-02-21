@@ -64,6 +64,9 @@ button:focus {
   width: 100%;
   height: 100vh;
   z-index: 1;
+
+  background: url('./img/arctic-night-hero-bg.jpeg');
+  background-size: cover;
 }
 
 #home-section {
@@ -384,7 +387,7 @@ a {
 }
 
 .container .main-page {
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 .container .main-page .heading-main {
