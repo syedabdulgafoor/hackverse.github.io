@@ -45,67 +45,86 @@ function testScroll() {
 }
 
 
-// Scripts for Scroll Animations
-
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
 let speed = 200;
 
+let scene1 = gsap.timeline();
+
+ScrollTrigger.create({
+  animation: scene1,
+  trigger: "#hero",
+  start: "top top",
+  end: "80% center",
+  scrub: 3,
+  pin: true,
+});
+
+scene1.to("#skateperson", { x: -160, y: 50 });
+
 gsap.to("#h2-1", {
-    yPercent: 10,
-    ease: "none",
-    scrollTrigger: {
-      trigger: ".scrollElement",
-      scrub: 2
-    }, 
-  });
+  yPercent: 10,
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".scrollElement",
+    scrub: 2,
+  },
+});
+
+gsap.to("#skateperson", {
+  yPercent: 10,
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".scrollElement",
+    scrub: 2,
+  },
+});
 
 gsap.to("#h2-2", {
-    yPercent: 50,
-    ease: "none",
-    scrollTrigger: {
-      trigger: ".scrollElement",
-      scrub: 1
-    }, 
-  });
+  yPercent: 50,
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".scrollElement",
+    scrub: 1,
+  },
+});
 
 gsap.to("#h2-3", {
-    yPercent: 60,
-    ease: "none",
-    scrollTrigger: {
-      trigger: ".scrollElement",
-      scrub: 1
-    }, 
-  });
+  yPercent: 60,
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".scrollElement",
+    scrub: 1,
+  },
+});
 
 gsap.to("#h2-4", {
-    yPercent: 80,
-    ease: "none",
-    scrollTrigger: {
-      trigger: ".scrollElement",
-      scrub: 1
-    }, 
-  });
+  yPercent: 80,
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".scrollElement",
+    scrub: 1,
+  },
+});
 
 gsap.to("#h2-5", {
-    yPercent: 100,
-    ease: "none",
-    scrollTrigger: {
-      trigger: ".scrollElement",
-      scrub: 1
-    }, 
-  });
+  yPercent: 100,
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".scrollElement",
+    scrub: 1,
+  },
+});
 
 gsap.to("#h2-6", {
-    yPercent: 100,
-    ease: "none",
-    scrollTrigger: {
-      trigger: ".scrollElement",
-      scrub: 1
-    }, 
-  });
-
+  yPercent: 100,
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".scrollElement",
+    scrub: 1,
+  },
+});
 
 //reset scrollbar position after refresh
-window.onbeforeunload = function() {
-    window.scrollTo(0, 0);
-}
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+};
