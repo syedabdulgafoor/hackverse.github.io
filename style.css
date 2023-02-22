@@ -76,7 +76,35 @@ button:focus {
   height: 100vh;
   z-index: 2;
   width: 100%;
-  
+}
+
+.cloud-cover svg{
+  position: absolute;
+  inset: 0;
+  width: 100vw;
+  top: -20vw;
+}
+
+#iceberg{
+  position: absolute;
+  inset: 0;
+  height: 80%;
+  width: auto;
+  opacity: 0.8;
+  margin: auto;
+  animation: floatAnim 3s ease-in-out infinite;
+}
+
+@keyframes floatAnim {
+  0% {
+    transform: translate(10%,3px);
+  }
+  50% {
+    transform: translate(10%,10px);
+  }
+  100% {
+    transform: translate(10%,3px);
+  }
 }
 
 .home {
@@ -860,6 +888,7 @@ section {
 }
 
 /* Schedule Section */
+
 .frame {
   width: 500px;
   height: auto;
@@ -1082,7 +1111,7 @@ svg {
 }
 
 .schedule {
-  background-color: #c1daf1;
+  background-color: #fff;
   min-height: 110vh;
   font-family: Poppins;
 }
