@@ -44,7 +44,6 @@ function testScroll() {
   }
 }
 
-
 gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
 let speed = 200;
 
@@ -142,7 +141,6 @@ gsap.to("#a2-1", {
   },
 });
 
-
 gsap.to("#a2-2", {
   yPercent: 10,
   ease: "none",
@@ -150,6 +148,25 @@ gsap.to("#a2-2", {
     trigger: ".scrollElement",
     scrub: 1,
   },
+});
+
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: ".cloud-cover",
+      start: "-=250px bottom",
+      end: "top center",
+      scrub: 1,
+    },
+  })
+  .fromTo(".cloud1", { y: -200 }, { y: -550 }, 0)
+  .fromTo(".cloud2", { y: -150 }, { y: -250 }, 0)
+  .fromTo(".cloud3", { y: -50 }, { y: -400 }, 0);
+
+gsap.to("#iceberg",{
+  y:5,
+  duration:0.3,
+  ease:"easeIn"
 });
 
 // ScrollTrigger.create({
@@ -171,56 +188,55 @@ gsap.to("#a2-2", {
 //   },
 // });
 
-
 //reset scrollbar position after refresh
 window.onbeforeunload = function () {
   window.scrollTo(0, 0);
 };
 
-// Text animation 
-document.addEventListener('DOMContentLoaded',function(event){
+// Text animation
+document.addEventListener("DOMContentLoaded", function (event) {
   // array with texts to type in typewriter
-  var dataText = [ "Imagine.", "Believe.", "Achieve!"];
-  
+  var dataText = ["Imagine.", "Believe.", "Achieve!"];
+
   // type one text in the typwriter
   // keeps calling itself until the text is finished
   function typeWriter(text, i, fnCallback) {
     // chekc if text isn't finished yet
-    if (i < (text.length)) {
+    if (i < text.length) {
       // add next character to h1
-     document.querySelector("h1").innerHTML = text.substring(0, i+1) +'<span aria-hidden="true" id="typing-text"></span>';
+      document.querySelector("h1").innerHTML =
+        text.substring(0, i + 1) +
+        '<span aria-hidden="true" id="typing-text"></span>';
 
       // wait for a while and call this function again for next character
-      setTimeout(function() {
-        typeWriter(text, i + 1, fnCallback)
+      setTimeout(function () {
+        typeWriter(text, i + 1, fnCallback);
       }, 100);
     }
     // text finished, call callback if there is a callback function
-    else if (typeof fnCallback == 'function') {
+    else if (typeof fnCallback == "function") {
       // call callback after timeout
       setTimeout(fnCallback, 700);
     }
   }
 
-  
   // start a typewriter animation for a text in the dataText array
-   function StartTextAnimation(i) {
-     if (typeof dataText[i] == 'undefined'){
-        setTimeout(function() {
-          StartTextAnimation(0);
-        }, 20000);
-     }
-     // check if dataText[i] exists
+  function StartTextAnimation(i) {
+    if (typeof dataText[i] == "undefined") {
+      setTimeout(function () {
+        StartTextAnimation(0);
+      }, 20000);
+    }
+    // check if dataText[i] exists
     if (i < dataText[i].length) {
       // text exists! start typewriter animation
-     typeWriter(dataText[i], 0, function(){
-       // after callback (and whole text has been animated), start next text
-       StartTextAnimation(i + 1);
-     });
+      typeWriter(dataText[i], 0, function () {
+        // after callback (and whole text has been animated), start next text
+        StartTextAnimation(i + 1);
+      });
     }
   }
-  
+
   // start the text animation
   StartTextAnimation(0);
 });
-

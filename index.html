@@ -525,7 +525,6 @@
         <!-- <circle id="skateperson" cx="700" cy="375" r="25" fill="red" /> -->
         <image id="skateperson" href="./img/Skater_Boy_Silhouette_PNG_Clip_Art_Image.png" height="49" x="600" y="375" />
       </svg>
-      <div class="scrollElement"></div>
       
     </div>
     <div class="snowflakeContainer">
@@ -664,7 +663,21 @@
       
     </div>
 
-    <div id="schedule-div">
+    <div id="schedule-div" style="position: relative;">
+      <div class="cloud-cover">
+        <svg viewBox="0 0 1200 250" xmlns="http://www.w3.org/2000/svg">
+          <mask id="m">
+            <g class="cloud1">
+              <rect fill="#fff" width="100%" height="801" y="799" />
+              <image xlink:href="https://assets.codepen.io/721952/cloud1Mask.jpg" width="1200" height="800"/>
+            </g>
+          </mask>
+          <image class="cloud2" xlink:href="https://assets.codepen.io/721952/cloud2.png" width="1200" height="800"/>    
+          <image class="cloud3" xlink:href="https://assets.codepen.io/721952/cloud3.png" width="1200" height="800"/>
+          <image class="cloud1" xlink:href="https://assets.codepen.io/721952/cloud1.png" width="1200" height="800"/>
+        </svg>
+      </div>
+      <div class="fix"></div>
       <section id="schedule-section">
         <div class="schedule fluid-container d-flex flex-column">
           <div class="container fill justify-content-center"  data-aos="fade-up">
@@ -756,16 +769,16 @@
            </div>
         </div>
       </section>
-        <!-- <svg 
+        <svg 
             
             xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink"
             viewBox="0 0 750 500"
             preserveAspectRatio="xMidYMax slice"
+            id="iceberg"
           >
         <image id="iceberg-1" href="./img/iceberg.png" height="500" x="0" y="0" />
         </svg>
-          <div class="scrollElement"></div> -->
     </div>
 
       <!-- Stats Section -->

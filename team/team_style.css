@@ -144,6 +144,8 @@ p {
   height: 150px;
   box-shadow: 1px 1px 4px 2px rgba(255, 255, 255, 0.2);
   border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
 }
 
 .card:hover .pic {
