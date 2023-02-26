@@ -65,7 +65,7 @@ button:focus {
   height: 100vh;
   z-index: 1;
 
-  background: url('./img/arctic-night-hero-bg.jpeg');
+  background: url("./img/arctic-night-hero-bg.jpeg");
   background-color: #1d1d3a;
   background-size: cover;
 }
@@ -78,7 +78,7 @@ button:focus {
   width: 100%;
 }
 
-.cloud-cover svg{
+.cloud-cover svg {
   position: absolute;
   inset: 0;
   width: 100vw;
@@ -158,7 +158,7 @@ button:focus {
   width: 100%;
   height: 100vh;
   z-index: 1;
-  background: url('./img/ice_cave1.png');
+  background: url("./img/ice_cave1.png");
   background-size: cover;
 }
 
@@ -401,12 +401,12 @@ a {
 }
 
 .icy-navbar {
-  margin:20px;
+  margin: 20px;
   /* outline: 100px white; */
   /* border-top:2px solid white;
   border-left:2px solid white;
   border-right:2px solid white; */
-  border:2px solid white;
+  border: 2px solid white;
   border-top-right-radius: 10%;
   border-top-left-radius: 10%;
   width: 100%;
@@ -414,7 +414,7 @@ a {
 }
 
 .icy-navbar-2 {
-  margin:20px;
+  margin: 20px;
   /* outline: 100px white; */
   /* border-top:2px solid white;
   border-left:2px solid white;
@@ -614,11 +614,11 @@ section {
       0 50px 25px rgba(0, 0, 0, 0.2);
   }
 }
- /* Imagine text animation end*/
+/* Imagine text animation end*/
 
- /*Typing animation */
- #typing-text span {
-  border-right: .05em solid;
+/*Typing animation */
+#typing-text span {
+  border-right: 0.05em solid;
   animation: caret 1s steps(1) infinite;
 }
 
@@ -890,7 +890,7 @@ svg {
   margin: 0px auto;
   z-index: 3;
 }
- /*Paper Plane: Image*/
+/*Paper Plane: Image*/
 .plane {
   width: 100%;
   height: 60px;
@@ -1020,7 +1020,6 @@ svg {
   margin-right: 0px;
 }
 
-
 /*Cloud: Animation*/
 .cloud {
   -webkit-animation-name: cloud-movement;
@@ -1074,7 +1073,6 @@ svg {
     transform: translateX(300px);
   }
   10% {
-
     opacity: 0.7;
   }
   90% {
@@ -1089,11 +1087,10 @@ svg {
 }
 
 .schedule {
-  background-color: #fff;
   min-height: 110vh;
   font-family: Poppins;
-  background-image: url('./img/iceberg.png');
-  background-size: 60% auto;
+  background-image: url("./img/iceberg.png");
+  background-size: 50% auto;
   background-repeat: no-repeat;
   background-position: center;
   animation: floatAnim 3s ease-in-out infinite;
@@ -1260,17 +1257,30 @@ padding-left: 3em; */
 /* timeline style */
 
 .timeline-container {
+  background-color: rgba(255, 255, 255, 0.12);
+  border-radius: 30px;
   display: flex;
   flex-direction: column;
   background: rgba(206, 186, 186, 0.3);
-  padding: 1rem ;
 }
 
 .timeline-container .timeline-item {
   list-style: none;
   display: flex;
   position: relative;
-  min-height: 70px;
+  height: 10vw;
+  min-height: 130px;
+}
+
+.timeline-container
+  .timeline-item:first-child
+  .timeline-content-icon-container
+  .top-bar,
+.timeline-container
+  .timeline-item:last-child
+  .timeline-content-icon-container
+  .bottom-bar {
+  opacity: 0;
 }
 
 .timeline-container .timeline-item .timeline-content-left {
@@ -1284,6 +1294,16 @@ padding-left: 3em; */
   text-align: right;
   flex: 1;
   margin: auto 0;
+}
+
+.timeline-container .timeline-item .timeline-content-left h4 {
+  letter-spacing: 1.5px;
+  color: rgb(23, 22, 27);
+  font-weight: 100;
+  font-size: 1.25em;
+  margin: 0;
+  padding-bottom: 0.2em;
+  font-weight: bold;
 }
 
 .timeline-container .timeline-item .timeline-content-icon-container {
@@ -1313,12 +1333,15 @@ padding-left: 3em; */
   }
 }
 
-.timeline-container .timeline-item .timeline-content-icon-container .top-bar{
-    border-radius: 0 0 10px 10px;
+.timeline-container .timeline-item .timeline-content-icon-container .top-bar {
+  border-radius: 0 0 10px 10px;
 }
 
-.timeline-container .timeline-item .timeline-content-icon-container .bottom-bar{
-    border-radius: 10px 10px 0 0;
+.timeline-container
+  .timeline-item
+  .timeline-content-icon-container
+  .bottom-bar {
+  border-radius: 10px 10px 0 0;
 }
 
 .timeline-container
@@ -1338,8 +1361,8 @@ padding-left: 3em; */
   margin: 11.5px 0;
   border: 4px solid #4298c3;
   color: #fafafa;
-  width: 42px;
-  height: 42px;
+  width: 50px;
+  height: 50px;
 }
 
 .timeline-container
@@ -1352,22 +1375,58 @@ padding-left: 3em; */
   height: 100%;
   font-size: 1.5rem;
   color: black;
+  padding: 3px;
 }
 
 .timeline-container .timeline-item .timeline-content-right h1 {
-    letter-spacing: 1.5px;
-    color: rgb(23, 22, 27);
-    font-weight: 100;
-    font-size: 1.5em;
-    margin: 0;
-    border-bottom: 1px solid #777;
-    padding-bottom: 0.2em;
-    font-weight: bold;
+  letter-spacing: 1.5px;
+  color: rgb(23, 22, 27);
+  font-weight: 100;
+  font-size: 1.5em;
+  margin: 0;
+  padding-bottom: 0.2em;
+  font-weight: bold;
 }
 
-.timeline-container a, .timeline-container span, .timeline-container h1, .timeline-container h2, .timeline-container h3, .timeline-container span {
-    text-decoration: none;
-    color: blue;
+@media only screen and (max-width: 993px) {
+  .timeline-container .timeline-item .timeline-content-right h1,
+  .timeline-container .timeline-item .timeline-content-left h4 {
+    font-size: 1.1em;
+  }
+
+  .timeline-container .timeline-item .timeline-content-left span{
+    font-size: 0.9em;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .timeline-container .timeline-item .timeline-content-right h1,
+  .timeline-container .timeline-item .timeline-content-left h4 {
+    font-size: 0.95em;
+  }
+
+  .timeline-container .timeline-item .timeline-content-left span{
+    font-size: 0.75em;
+  }
+}
+
+@media only screen and (max-width: 521px) {
+  .timeline-container .timeline-item .timeline-content-right h1,
+  .timeline-container .timeline-item .timeline-content-left h4 {
+    font-size: 0.8em;
+  }
+
+  .timeline-container .timeline-item .timeline-content-left span{
+    font-size: 0.6em;
+  }
+}
+
+.timeline-container a,
+.timeline-container h1,
+.timeline-container h2,
+.timeline-container h3 {
+  text-decoration: none;
+  color: blue;
 }
 
 .timeline-container .timeline-item .timeline-content-right {
@@ -1385,14 +1444,15 @@ padding-left: 3em; */
   flex-direction: column;
 }
 
-.timeline-container .timeline-item .timeline-content-right .timeline-content-main{
-    padding: 0 1.75rem;
-    margin-top: 3px;
+.timeline-container
+  .timeline-item
+  .timeline-content-right
+  .timeline-content-main {
+  padding: 0 1.75rem;
+  margin-top: 3px;
 }
 
-
 /* timeline style */
-
 
 .member-socials {
   display: inline-block;
