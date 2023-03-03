@@ -3,11 +3,11 @@ var name = "FirstName LastName"
 
 let p_info = [
     {
-        name: 'Prof. Udaykumar R. Yaragatti',
+        name: 'Prof. Prasad Krishna',
         image_path: 'patrons/Director.webp',
         email: 'director@nitk.ac.in',
-        linkedin: 'https://www.linkedin.com/in/udaykumar-r-yaragatti-559a1514/',
-        designation: 'Director in-charge'
+        linkedin: '#',
+        designation: 'Director'
     }
 ]
 
@@ -20,18 +20,39 @@ let adv_info = [
         designation: 'Dean Academic'
     },
     {
-        name: 'Prof. Vijay Desai',
+        name: 'Prof. Shreekantha S. Rao',
         image_path: 'adv-com/Dean_Alumni_Affairs.webp',
         email: 'deanaair@nitk.edu.in',
         linkedin: '#',
         designation: 'Dean Alumni Affairs and Institutional Relations'
     },
     {
-        name: 'Prof. M.S. Bhat',
+        name: 'Dr. Navin Karanth P.',
+        image_path: 'adv-com/Associate_Dean_I_AA_IR.webp',
+        email: 'associate-dean-aa@nitk.edu.in',
+        linkedin: '#',
+        designation: 'Associate Dean-I (AA&IR)'
+    },
+    {
+        name: 'Prof. G. C. Mohan Kumar',
         image_path: 'adv-com/Dean_Faculty_Welfare.webp',
-        email: 'ahs@nitk.ac.in',
+        email: 'deanfw@nitk.edu.in',
         linkedin: '#',
         designation: 'Dean Faculty Welfare'
+    },
+    {
+        name: 'Dr. P. Sam Johnson',
+        image_path: 'adv-com/Associate_Dean_Faculty_Welfare_I.webp',
+        email: 'associatedeanfw1@nitk.edu.in',
+        linkedin: '#',
+        designation: 'Associate Dean-I (Faculty Welfare)'
+    },
+    {
+        name: 'Prof. Harsha Vardhan',
+        image_path: 'adv-com/Associate_Dean_Faculty_Welfare_II.webp',
+        email: 'dean_fw@nitk.edu.in',
+        linkedin: '#',
+        designation: 'Associate Dean-II (Faculty Welfare)'
     },
     {
         name: 'Prof. K. S. Babu Narayan',
@@ -48,25 +69,53 @@ let adv_info = [
         designation: 'Dean Research & Consultancy'
     },
     {
+        name: 'Dr. Subhaschandra Kattimani',
+        image_path: 'adv-com/Kattimani.webp',
+        email: 'dean.rc@nitk.edu.in',
+        linkedin: '#',
+        designation: 'Associate Dean-I (Research & Consultancy)'
+    },
+    {
+        name: 'Dr. Hari Prasad Dasari',
+        image_path: 'adv-com/Hari_Prasad_Dasari.webp',
+        email: 'dean.rc@nitk.edu.in',
+        linkedin: '#',
+        designation: 'Associate Dean-II (Research & Consultancy)'
+    },
+    {
         name: 'Prof. Narendranath S',
         image_path: 'adv-com/Narendranath_DSW.webp',
-        email: 'jagan@nitk.ac.in',
+        email: 'deansw@nitk.edu.in',
         linkedin: '#',
         designation: 'Dean Students Welfare'
     },
     {
+        name: 'Dr. Alwyn Roshan Pais',
+        image_path: 'adv-com/arp.webp',
+        email: ' associate-dean-sw1@nitk.edu.in',
+        linkedin: '#',
+        designation: 'Associate Dean-I (Students Welfare)'
+    },
+    {
+        name: 'Dr. C. P. Devatha',
+        image_path: 'adv-com/Devatha.webp',
+        email: 'nitkswrc@gmail.com',
+        linkedin: '#',
+        designation: 'Associate Dean-II (Students Welfare)'
+    },
+    {
         name: 'Dr. Manjunatha Sharma K',
         image_path: 'adv-com/Associate Dean MSK.webp',
-        email: 'ashvini@nitk.ac.in',
+        email: 'associatedean_ug@nitk.edu.in',
         linkedin: '#',
-        designation: 'Associate Dean'
+        designation: 'Associate Dean (Academic)-II [Undergraduate]'
     },
     {
         name: 'Dr. Ramesh Kini M',
         image_path: 'adv-com/ramesh-kini-m-image.webp',
-        email: 'vidyaks95@nitk.ac.in',
+        email: 'associatedean_pgrch@nitk.edu.in',
         linkedin: '#',
-        designation: 'Associate Dean'
+        designation: 'Associate Dean (Academic)-II [Post Graduate & Research]'
     }
 ]
 
