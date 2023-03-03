@@ -115,7 +115,7 @@ let adv_info = [
         image_path: 'adv-com/ramesh-kini-m-image.webp',
         email: 'associatedean_pgrch@nitk.edu.in',
         linkedin: '#',
-        designation: 'Associate Dean (Academic)-II [Post Graduate & Research]'
+        designation: 'Associate Dean (Academic)-I [Post Graduate & Research]'
     }
 ]
 
