@@ -120,9 +120,9 @@ let adv_info = [
 ]
 
 let fac_info = [{
-        name: 'Dr. Anand Kumar M.',
-        image_path: 'fac-ads/anandkumar.webp',
-        email: 'm_anandkumar.nitk.edu.in',
+        name: 'Dr Basavaraj Talawar',
+        image_path: 'fac-ads/basavaraj_talawar.webp',
+        email: 'basavaraj@nitk.edu.in',
         linkedin: '#',
         designation: 'Assistant Professor'
     },
