@@ -67,12 +67,25 @@
 
   <body data-bs-spy="scroll" data-bs-target="#scroll-spy" data-bs-offset="90">
     <!-- navbar -->
+    <script>
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("scroll-spy").style.top = "0";
+        } else {
+          document.getElementById("scroll-spy").style.top = "-200px";
+        }
+        prevScrollpos = currentScrollPos;
+      }
+    
+    </script>
 
     <nav id="scroll-spy" class="navbar navbar-dark fixed-top navbar-expand-lg">
-      <div class="container" data-aos="fade-up" data-aos-once="true">
+      <div class="container" data-aos="fade-up" data-aos-once="true" id="container">
         <img
           src="./img/logo.webp"
-          width="80px"
+          width="200px"
           alt="Hackverse"
           class="navbar-brand navbar-logo-custom"
         />
@@ -533,7 +546,7 @@
 
     <div class="fluid-container fill" id="about-div">
       <!-- About hackverse -->
-      <section id="about-section">
+      <section id="about-section" style="margin-top: 15%;">
         <div class="about fluid-container d-flex align-items-center">
           <div class="container">
             <div class="row about-hackverse-container">
