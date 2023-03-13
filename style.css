@@ -305,7 +305,7 @@ button:focus {
   padding-bottom: 300px;
   color: #d1e5dc;
   padding-top: 8%;
-  background: url("img/trees-snow.png") bottom no-repeat,#63c3fb;
+  background: url("img/trees-snow.png") bottom no-repeat, #63c3fb;
   background-size: 100%, cover;
 }
 
@@ -348,7 +348,7 @@ button:focus {
 }
 
 .footer {
-  background: linear-gradient(#fff, rgb(136,210,252));
+  background: linear-gradient(#fff, rgb(136, 210, 252));
   color: #000;
   padding: 5%;
   padding-bottom: 0%;
@@ -358,7 +358,7 @@ button:focus {
   color: #eb476f;
 }
 
-.footer h2{
+.footer h2 {
   text-align: center;
 }
 
@@ -469,6 +469,52 @@ a {
 .container .main-page .home-page-logo {
   padding: 10rem;
 }
+
+/* Countdown Starts Here  */
+
+.countdown-container {
+  position: relative;
+}
+
+.countdown p{
+  text-align: center;
+}
+
+.countdown-block {
+  position: relative;
+  display: inline-block;
+  min-width: 80px;
+  margin-right: 10px;
+  padding-right: 12px;
+}
+.countdown-block:not(:last-child) ::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 1px;
+  opacity: 0.2;
+  background: #ffffff44;
+}
+
+.countdown-block span {
+  float: left;
+  clear: left;
+  text-align: center;
+  width: 100%;
+}
+
+.countdown-block .countdown-title {
+  font-size: 2rem;
+}
+
+.countdown-block .countdown-desc {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Countdown  Ends Here*/
+
 /* relative position for scrollspy to work */
 body,
 section {
