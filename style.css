@@ -302,25 +302,26 @@ button:focus {
 .faq {
   min-height: 120vh;
   background-color: #021f3b;
+  padding-bottom: 300px;
   color: #d1e5dc;
   padding-top: 8%;
-  background: url("img/trees-snow.png") bottom no-repeat,
-    url("./img/bg_stars.webp") top no-repeat;
+  background: url("img/trees-snow.png") bottom no-repeat, #63c3fb;
   background-size: 100%, cover;
 }
 
 .accordion-item {
-  background-color: #d1e5dc;
+  background-color: transparent;
   border: none;
   margin-bottom: 32px;
   border-radius: 4px;
+  border-bottom: 2px solid #22b9f0;
+  background: rgba(136, 210, 252, 0.5);
 }
 .accordion-button {
-  color: #000;
-  background-color: #d1e5dc;
+  color: #305c75;
+  background-color: transparent;
   font-weight: 700;
   font-size: 16px;
-  border-left: 4px solid transparent;
   border-radius: 4px;
 }
 
@@ -328,29 +329,27 @@ button:focus {
   box-shadow: none;
 }
 .accordion-button:hover {
-  border-left: 4px solid #00a878;
+  background: rgba(136, 210, 252, 0.8);
 }
 
 .accordion-button:not(.collapsed) {
-  color: #000;
-  background-color: #d1e5dc;
+  color: #305c75;
+  background: rgba(136, 210, 252, 0.6);
   box-shadow: none;
-  border-left: 4px solid #00a878;
 }
 
 .accordion-body {
-  background-color: #d1e5dc;
+  background: rgba(136, 210, 252, 0.6);
   color: #000;
   font-size: 14px;
   font-family: Inter;
-  border-left: 4px solid #00a878;
   border-radius: 0 0 4px 4px;
   padding-top: 0;
 }
 
 .footer {
-  background: #021f3b;
-  color: #fff;
+  background: linear-gradient(#fff, rgb(136, 210, 252));
+  color: #000;
   padding: 5%;
   padding-bottom: 0%;
 }
@@ -359,8 +358,13 @@ button:focus {
   color: #eb476f;
 }
 
+.footer h2 {
+  text-align: center;
+}
+
 .footer p {
   font-size: 14px;
+  text-align: center;
 }
 
 .footer p.lead.no-margin {
@@ -465,6 +469,52 @@ a {
 .container .main-page .home-page-logo {
   padding: 10rem;
 }
+
+/* Countdown Starts Here  */
+
+.countdown-container {
+  position: relative;
+}
+
+.countdown p{
+  text-align: center;
+}
+
+.countdown-block {
+  position: relative;
+  display: inline-block;
+  min-width: 80px;
+  margin-right: 10px;
+  padding-right: 12px;
+}
+.countdown-block:not(:last-child) ::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 1px;
+  opacity: 0.2;
+  background: #ffffff44;
+}
+
+.countdown-block span {
+  float: left;
+  clear: left;
+  text-align: center;
+  width: 100%;
+}
+
+.countdown-block .countdown-title {
+  font-size: 2rem;
+}
+
+.countdown-block .countdown-desc {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Countdown  Ends Here*/
+
 /* relative position for scrollspy to work */
 body,
 section {
@@ -1397,7 +1447,7 @@ padding-left: 3em; */
     font-size: 1.1em;
   }
 
-  .timeline-container .timeline-item .timeline-content-left span{
+  .timeline-container .timeline-item .timeline-content-left span {
     font-size: 0.9em;
   }
 }
@@ -1408,7 +1458,7 @@ padding-left: 3em; */
     font-size: 0.95em;
   }
 
-  .timeline-container .timeline-item .timeline-content-left span{
+  .timeline-container .timeline-item .timeline-content-left span {
     font-size: 0.75em;
   }
 }
@@ -1419,18 +1469,21 @@ padding-left: 3em; */
     font-size: 0.8em;
   }
 
-  .timeline-container .timeline-item .timeline-content-left span{
+  .timeline-container .timeline-item .timeline-content-left span {
     font-size: 0.6em;
   }
 
-  .schedule{
+  .schedule {
     padding: 0;
   }
 
-  .timeline-container .timeline-item .timeline-content-icon-container .timeline-content-icon {
+  .timeline-container
+    .timeline-item
+    .timeline-content-icon-container
+    .timeline-content-icon {
     width: 32px;
     height: 32px;
-}
+  }
 }
 
 .timeline-container a,
