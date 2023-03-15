@@ -46,7 +46,7 @@ function testScroll() {
 
 // Countdown logic
 
-var countDownDate = new Date("2023-03-25");;
+var countDownDate = new Date("2023-04-15");;
 
 // Update the count down every 1 second
 var x = setInterval(function () {
