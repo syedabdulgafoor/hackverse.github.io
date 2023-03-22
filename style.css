@@ -95,9 +95,11 @@ button:focus {
 /* Blinking text */
 .blink-hard {
   animation: blinker 1s step-end infinite;
+  animation-delay: 4s;
 }
 .blink-soft {
   animation: blinker 1.5s linear infinite;
+  animation-delay: 4s;
 }
 @keyframes blinker {
   50% {
