@@ -14,6 +14,7 @@ html {
 }
 body {
   overflow-x: hidden;
+  background: #63c3fb;
 }
 
 ::-webkit-scrollbar {
@@ -58,16 +59,16 @@ button:focus {
   outline: none;
 }
 
+#hero{
+  height: 100vh;
+}
+
 #hero svg {
   position: relative;
   display: block;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   z-index: 1;
-
-  background: url("./img/arctic-night-hero-bg.jpeg");
-  background-color: #1d1d3a;
-  background-size: cover;
 }
 
 #home-section {
@@ -454,23 +455,16 @@ a {
   justify-content: center;
 }
 
-.container .main-page {
-  justify-content: flex-start;
-}
-
-.container .main-page .heading-main {
-  color: white;
-  padding: 20px;
-  border-radius: 6px;
-  position: relative;
-  font-family: Poppins, sans-serif;
-  overflow: hidden;
-  min-width: 284px;
-  min-height: initial;
-  backdrop-filter: blur(23px);
-  background: rgba(33, 37, 41, 0.2);
-
+.hero-card{
+  min-width: 400px;
+  width: 40vmin;
+  padding: 1rem 0;
+  margin: 5vh 0;
   align-items: center;
+  backdrop-filter: blur(3px);
+  border: 1px solid #36c6fb4b;
+  background: rgba(136, 210, 252, 0.5);
+  border-radius: 6px;
 }
 
 .container .main-page .home-page-logo {
@@ -530,6 +524,8 @@ section {
 
 .navbar-logo-custom {
   margin-right: 50px;
+  height: 100px;
+  width: auto;
   float: left;
 }
 
