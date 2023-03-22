@@ -199,10 +199,10 @@ button:focus {
 }
 
 .stats {
-  background-color: #021f3b;
+  background-color: #201c3c;
   min-height: 80vh;
   color: #d1e5dc;
-  background-image: url("./img/bg_stars.webp");
+  /* background-image: url("./img/bg_stars.webp"); */
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -271,7 +271,7 @@ button:focus {
 }
 
 .sponsor-us {
-  background-color: #d1e5dc;
+  background-color: #DCF1FF;
   min-height: 100vh;
   overflow-x: hidden;
 }
