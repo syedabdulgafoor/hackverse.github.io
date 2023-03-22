@@ -389,6 +389,11 @@ a {
   width: 36px;
 }
 
+#social-nav-icons {
+  font-size:18px;
+  color:white;
+}
+
 .campus img {
   border-radius: 5px;
   width: 100%;
