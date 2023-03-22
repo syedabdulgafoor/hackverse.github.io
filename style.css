@@ -187,7 +187,7 @@ button:focus {
   color: white;
   margin-top: 48px;
   font-weight: 700;
-  background-color: #00a878;
+  background-color: #63c3fb;
   border-radius: 50px;
   width: 60%;
   font-size: 1.25rem;
@@ -197,7 +197,7 @@ button:focus {
 }
 
 .revisit:hover {
-  background-color: #04533d;
+  background-color: #00A1FF;
 }
 
 .stats {
@@ -282,7 +282,7 @@ button:focus {
   color: white;
   margin-top: 32px;
   font-weight: 700;
-  background-color: #00a878;
+  background-color: #00A1FF;
   border-radius: 50px;
   width: 40%;
   font-size: 1.25rem;
@@ -291,7 +291,7 @@ button:focus {
 }
 
 .sponsor:hover {
-  background-color: #04533d;
+  background-color: #6ec5ff;
 }
 
 .sponsor-container > a > img {
