@@ -298,7 +298,7 @@ button:focus {
   min-height: 120vh;
   background-color: #021f3b;
   padding-bottom: 300px;
-  color: #d1e5dc;
+  color: #dcf0fc;
   padding-top: 8%;
   background: url("img/trees-snow.png") bottom no-repeat, #63c3fb;
   background-size: 100%, cover;
@@ -448,6 +448,7 @@ a {
 }
 
 .hero-card{
+  color: #f3faff;
   min-width: 400px;
   width: 40vmin;
   padding: 1rem 0;
