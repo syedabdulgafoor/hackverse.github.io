@@ -157,14 +157,14 @@ gsap.to("#h2-6", {
   },
 });
 
-ScrollTrigger.create({
-  animation: scene1,
-  trigger: "#about-div",
-  start: "top top",
-  end: "80% center",
-  scrub: 3,
-  pin: true,
-});
+// ScrollTrigger.create({
+//   animation: scene1,
+//   trigger: "#about-div",
+//   start: "top top",
+//   end: "80% center",
+//   scrub: 3,
+//   pin: true,
+// });
 
 gsap.to("#a2-1", {
   yPercent: 10,
