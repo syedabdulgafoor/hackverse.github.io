@@ -600,7 +600,8 @@ a {
   align-items: center;
   backdrop-filter: blur(3px);
   border: 1px solid #36c6fb4b;
-  background: rgba(136, 210, 252, 0.5);
+  /* background: rgba(136, 210, 252, 0.5); */
+  background: rgba(136, 210, 252, 0.3);
   border-radius: 6px;
 }
 
