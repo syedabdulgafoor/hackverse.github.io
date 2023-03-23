@@ -271,6 +271,17 @@ button:focus {
   padding-top: 0%;
 }
 
+.stats-card {
+  /* background-color: rgb(0, 162, 255, 0.05); */
+  background-color: rgba(0, 0, 0, 0.332);
+  margin-bottom: 5%;
+  padding-top: 2%;
+  backdrop-filter: blur(10px);
+  opacity: 10;
+  z-index: 400;
+  /* mask: linear-gradient(transparent, black 1000%); */
+}
+
 .stats-statistics {
 margin-bottom: 3%;
 }
@@ -334,6 +345,7 @@ div#carousel ~ span:hover { color: #888; cursor: pointer; }
 .testimonials {
   padding: 0%;
   margin: 0%;
+  z-index: 1000;
 }
 /* End Testimonials */
 
@@ -546,6 +558,21 @@ a {
   /* color: #042c44; */
   backdrop-filter: blur(10px);
   mask: linear-gradient(transparent, black 60%);
+}
+
+
+#scroll-spy-link {
+  font-family: 'Cabin Sketch', 'Poppins', cursive;
+}
+
+#scroll-spy-link :hover {
+  color: #18a7ff;
+}
+
+#navbarDropdown {
+  /* background: rgba(33, 37, 41, 0.2); */
+  font-family: 'Cabin Sketch', 'Poppins', cursive;
+  backdrop-filter: blur(2px);
 }
 
 .icy-navbar {
