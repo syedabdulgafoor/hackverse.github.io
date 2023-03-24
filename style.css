@@ -138,6 +138,7 @@ button:focus {
 .font-esgalon {
   font-family: 'Esgalon', sans-serif;
   font-size: 3em;
+  color: #fff;
 }
 
 .cloud-cover svg {
